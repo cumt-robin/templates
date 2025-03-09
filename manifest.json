@@ -1,0 +1,56 @@
+{
+    "version": "1.0.0",
+    "list": [
+        {
+            "name": "browser-ts-lib",
+            "title": "【基于ts的浏览器库】模板",
+            "description": "ts library template for browser",
+            "runtimeVars": ["currentYear"],
+            "globalVars": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "项目名称",
+                    "default": "browser-ts-lib"
+                },
+                {
+                    "name": "author",
+                    "type": "string",
+                    "description": "项目作者",
+                    "default": "Tusi"
+                },
+                {
+                    "name": "description",
+                    "type": "string",
+                    "description": "项目描述",
+                    "default": "ts library template for browser"
+                }
+            ],
+            "templateFiles": [
+                {
+                    "path": "package.json",
+                    "useGlobalVars": ["name", "author", "description"]
+                },
+                {
+                    "path": "rollup.config.js",
+                    "vars": {
+                        "libGlobalName": {
+                            "type": "string",
+                            "description": "库对应的window全局变量名",
+                            "default": "GlobalLib"
+                        }
+                    }
+                },
+                {
+                    "path": "README.md",
+                    "useGlobalVars": ["name"]
+                },
+                {
+                    "path": "LICENSE",
+                    "useGlobalVars": ["author"],
+                    "useRuntimeVars": ["currentYear"]
+                }
+            ]
+        }
+    ]
+}
