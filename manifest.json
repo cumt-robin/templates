@@ -33,13 +33,14 @@
                 },
                 {
                     "path": "rollup.config.js",
-                    "vars": {
-                        "libGlobalName": {
+                    "vars": [
+                        {
+                            "name": "libGlobalName",
                             "type": "string",
                             "description": "库对应的window全局变量名",
                             "default": "GlobalLib"
                         }
-                    }
+                    ]
                 },
                 {
                     "path": "README.md",
