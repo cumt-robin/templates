@@ -1,0 +1,30 @@
+{
+    "editor.tabSize": 4,
+    "files.eol": "\n",
+    "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact", "vue"],
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always",
+        "source.fixAll.stylelint": "always"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "eslint.workingDirectories": [
+        {
+            "mode": "auto"
+        }
+    ],
+    "stylelint.validate": [
+        "css",
+        "less",
+        "scss",
+        "vue"
+    ],
+    "stylelint.enable": true,
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "typescript.tsdk": "node_modules/typescript/lib"
+}
