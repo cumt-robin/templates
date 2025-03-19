@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "list": [
         {
             "name": "browser-ts-lib",
@@ -17,7 +17,7 @@
                     "name": "author",
                     "type": "string",
                     "description": "项目作者",
-                    "default": "Tusi"
+                    "default": "程序员白彬"
                 },
                 {
                     "name": "description",
@@ -45,6 +45,43 @@
                 {
                     "path": "README.md",
                     "useGlobalVars": ["name"]
+                },
+                {
+                    "path": "LICENSE",
+                    "useGlobalVars": ["author"],
+                    "useRuntimeVars": ["currentYear"]
+                }
+            ]
+        },
+        {
+            "name": "vite-vue3-ts-pinia-antdv",
+            "title": "【基于vite + vue3 + ts + pinia + ant-design-vue】模板",
+            "description": "fast development template based on vite, vue3, ts, pinia, ant-design-vue",
+            "runtimeVars": ["currentYear"],
+            "globalVars": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "description": "项目名称",
+                    "default": "vite-vue3-ts-pinia-antdv"
+                },
+                {
+                    "name": "author",
+                    "type": "string",
+                    "description": "项目作者",
+                    "default": "程序员白彬"
+                },
+                {
+                    "name": "description",
+                    "type": "string",
+                    "description": "项目描述",
+                    "default": "fast development template based on vite, vue3, ts, pinia, ant-design-vue"
+                }
+            ],
+            "templateFiles": [
+                {
+                    "path": "package.json",
+                    "useGlobalVars": ["name", "author", "description"]
                 },
                 {
                     "path": "LICENSE",
